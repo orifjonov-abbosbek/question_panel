@@ -19,7 +19,7 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </Link>
           </li>
           <li className="sidebar_list_item">
-            <Link to="/get_all_questions">Get All Questions</Link>
+            <Link to="/">Get All Questions</Link>
           </li>
           <li className="sidebar_list_item">Contact</li>
         </ul>
