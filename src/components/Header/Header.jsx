@@ -2,6 +2,8 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import PropTypes from "prop-types";
 import { FaSquarePlus } from "react-icons/fa6";
+import { CgMenuGridR } from "react-icons/cg";
+import { BiSolidContact } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "./Heaader.scss";
 
@@ -11,8 +13,11 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
       <div className="sidebar" onClick={toggleSidebar}></div>
       <div className={`sidebar-content ${isSidebarOpen ? "open" : ""}`}>
         <ul className="sidebar_list">
-          <li className="sidebar_list_item">
-            <Link to="/">Dashboard</Link>
+          <li>
+            <Link className="sidebar_list_item" to="/">
+              <CgMenuGridR />
+              Dashboard
+            </Link>
           </li>
           <li>
             <Link className="sidebar_list_item" to="/add_question">
@@ -22,7 +27,10 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
             </Link>
           </li>
 
-          <li className="sidebar_list_item">Contact</li>
+          <li className="sidebar_list_item">
+            <BiSolidContact />
+            Contact
+          </li>
         </ul>
       </div>
       <div className="header">
