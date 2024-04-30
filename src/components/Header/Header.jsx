@@ -11,6 +11,9 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
       <div className="sidebar" onClick={toggleSidebar}></div>
       <div className={`sidebar-content ${isSidebarOpen ? "open" : ""}`}>
         <ul className="sidebar_list">
+          <li className="sidebar_list_item">
+            <Link to="/">Dashboard</Link>
+          </li>
           <li>
             <Link className="sidebar_list_item" to="/add_question">
               {" "}
@@ -18,7 +21,7 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
               Add Content
             </Link>
           </li>
-       
+
           <li className="sidebar_list_item">Contact</li>
         </ul>
       </div>
