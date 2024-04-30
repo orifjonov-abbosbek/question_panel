@@ -18,9 +18,7 @@ const HeaderAndSidebar = ({ isSidebarOpen, toggleSidebar }) => {
               Add Content
             </Link>
           </li>
-          <li className="sidebar_list_item">
-            <Link to="/">Get All Questions</Link>
-          </li>
+       
           <li className="sidebar_list_item">Contact</li>
         </ul>
       </div>
